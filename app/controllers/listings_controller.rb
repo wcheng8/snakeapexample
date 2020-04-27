@@ -26,6 +26,8 @@ class ListingsController < ApplicationController
     end
 
     def edit
+        set_breeds_and_sexes
+        @listing = Listing.new
     end
 
     def update
